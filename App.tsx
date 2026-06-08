@@ -9,6 +9,8 @@ import { ViewMode, Phone } from './types';
 import { MOCK_PHONES } from './constants';
 
 const App: React.FC = () => {
+
+  
   const [currentView, setCurrentView] = useState<string>(ViewMode.HOME);
   const [selectedPhone, setSelectedPhone] = useState<Phone | null>(null);
   const [comparisonList, setComparisonList] = useState<Phone[]>([]);
